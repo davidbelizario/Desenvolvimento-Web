@@ -1,0 +1,139 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Averia Gruesa Libre', cursive;
+    text-align: center;
+    color: darkslategray;
+}
+img{
+    width: 100%;
+}
+header{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+    z-index: 1;
+    box-shadow: 5px 5px 10px black inset;
+}
+header div {
+    width: 33.3%;
+}
+header img {
+    height: 25px;
+    width: auto;
+}
+#sel_pais, #sel_fonte {
+    width: 95%;
+    font-family: inherit;
+    font-size: 0.75rem;
+    color: inherit;
+    border: none;
+}
+
+main {
+    position: absolute;
+    top: 60px;
+}
+.container_capa {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+#img_capa{
+    box-shadow: 5px 5px 10px black;
+    border-radius:10%;
+}
+#bandeiras{
+    padding-top: 100px;
+}
+.container_destaque{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 60%;
+    background-color: lightgray;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10%;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 90%;
+    background-color: lightgray;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10%;
+}
+.container div{
+    width: 17%;
+    padding: 10px;
+}
+.Alemanha {
+    background: linear-gradient(to bottom, black, red, gold);
+}
+.Argentina {
+    background:  radial-gradient(circle, gold, deepskyblue, black);
+    color: black;
+}
+.Brasil {
+    background:  radial-gradient(circle, gold, forestgreen, white);
+    color: black;
+}
+.Espanha {
+    background:   radial-gradient(circle, gold, red);
+    color: black;
+}
+
+.Estados{
+    background: linear-gradient(to bottom, white, red, blue);
+    color: black;
+}
+.França{
+    background: linear-gradient(to right, blue, white, red);
+    color: black;
+}
+.Portugal{
+    background: linear-gradient(to right, forestgreen, red);
+    color: black;
+}
+.Suíça{
+    background: radial-gradient(circle, white, red);
+    color: black;
+}
+@media (min-width: 768px) {
+
+    header img{
+        height: 45px;
+    }
+
+    #sel_pais, #sel-fonte {
+        width: 70%;
+        font-size: 1.5rem;
+        
+    }
+    .container_capa {
+        width: 50%;
+    }
+    .container_destaque {
+        width: 15%;
+    }
+    .container {
+        width: 80%;
+        flex-wrap: nowrap;
+    }
+    .container div{
+        padding: 25px;
+    }
+}
+
